@@ -6,3 +6,7 @@ App Description:
 
   Enter Dollar amount in USD ($), select currency and press the Convert button. The app will then print
   out the converted rate.
+  
+Coming Changes:
+
+  Plans to make Xchange Rate somewhat live and automatically updates
