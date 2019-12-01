@@ -7,6 +7,8 @@ App Description:
   Enter Dollar amount in USD ($), select currency and press the Convert button. The app will then print
   out the converted rate.
   
+  ![Currency_Options](README%20Images/currency-options.png)
+  
   # US Dollar to Euro
   ![100-us-euro](README%20Images/100-us-euro.png)
   
