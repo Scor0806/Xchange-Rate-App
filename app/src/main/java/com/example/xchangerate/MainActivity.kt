@@ -11,8 +11,9 @@ import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
     var currency = ""
-    var currencyList = arrayOf("Euro","British Pound","Indian Rupee","Australian Dollar","Canadian Dollar","Singapore Dollar",
-        "Swiss Franc","Malaysian Ringgit","Japanese Yen","Chinese Yuan Renminbi")
+    var currencyList = arrayOf("Australian Dollar","British Pound","Canadian Dollar",
+        "Chinese Yuan Renminbi","Euro","Indian Rupee","Jamaican Dollar","Japanese Yen",
+        "Kuwaiti Dinar","Malaysian Ringgit","Singapore Dollar","Swiss Franc")
 
     var spinner:Spinner? = null
 
@@ -46,16 +47,19 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener{
             val dollar = dollarText.text.toString().toFloat()
 
             val dollarValue = when(currency){
+                "Australian Dollar" -> dollar * 1.48f
+                "British Pound" -> dollar * 0.77f
+                "Canadian Dollar" -> dollar * 1.33f
+                "Chinese Yuan Renminbi" -> dollar * 7.03f
                 "Euro" -> dollar * 0.9f
-                "British Pound" -> dollar * 0.82f
-                "Indian Rupee" -> dollar * 71.52f
-                "Australian Dollar" -> dollar * 1.47f
-                "Canadian Dollar" -> dollar * 1.329f
+                "Indian Rupee" -> dollar * 71.75f
+                "Jamaican Dollar" -> dollar * 140.56f
+                "Japanese Yen" -> dollar * 109.52f
+                "Kuwaiti Dinar" -> dollar * 0.30f
+                "Malaysian Ringgit" -> dollar * 4.18f
                 "Singapore Dollar" -> dollar * 1.38f
-                "Swiss Franc" -> dollar * 0.979f
-                "Malaysian Ringgit" -> dollar * 4.176f
-                "Japanese Yen" -> dollar * 106.45f
-                "Chinese Yuan Renminbi" -> dollar * 7.06f
+                "Swiss Franc" -> dollar * 1.00f
+
                 else -> dollar
             }
 
