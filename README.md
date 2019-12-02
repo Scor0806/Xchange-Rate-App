@@ -1,6 +1,6 @@
 # Xchange-rate
 
-This is just a static free quick Xchange rate app that's valid as of 08/21/2019 14:50.
+This is just a static free quick Xchange rate app that's valid as of 12/01/2019 18:13.
 #
 App Description:
 
